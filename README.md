@@ -1,8 +1,8 @@
-#### ТиМП лаба 2
+# ТиМП лаба 2
 
-### Task 1
+## Task 1
 
-# 1. Создайте пустой репозиторий на сервисе github.com (или gitlab.com, или bitbucket.com).
+### 1. Создайте пустой репозиторий на сервисе github.com (или gitlab.com, или bitbucket.com).
 
 ```
 echo "# Timp2" >> README.md
