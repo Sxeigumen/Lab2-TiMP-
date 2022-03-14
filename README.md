@@ -111,6 +111,34 @@ Git log
 git branch -d patch1
 ```
 
+## Task 2
+
+### 1. Создайте новую локальную ветку patch2.
+```
+git checkout -b patch2
+```
+### 2. Измените code style с помощью утилиты clang-format. Например, используя опцию -style=Mozilla.
+```
+clang-format -style=Mozilla hello_world.cpp
+```
+### 3. commit, push, создайте pull-request patch2 -> master.
+```
+git commit -a -m "change code style"
+git push origin patch2
+```
+### 4. В ветке master в удаленном репозитории измените комментарии, например, расставьте знаки препинания, переведите комментарии на другой язык.
+### 5. Убедитесь, что в pull-request появились конфликтны.
+### 6. Для этого локально выполните pull + rebase (точную последовательность команд, следует узнать самостоятельно). Исправьте конфликты.
+```
+git pull origin main
+git rebase main
+```
+### 7. Сделайте force push в ветку patch2
+```
+git push origin patch2 –force
+```
+### 8. Убедитель, что в pull-request пропали конфликтны.
+### 9. Вмержите pull-request patch2 -> master.
 
 
 
