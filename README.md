@@ -111,7 +111,7 @@ Git log
 git branch -d patch1
 ```
 
-## Task 2
+## Task 3
 
 ### 1. Создайте новую локальную ветку patch2.
 ```
@@ -132,6 +132,8 @@ git push origin patch2
 ```
 git pull origin main
 git rebase main
+или
+git push origin patch2 –force
 ```
 ### 7. Сделайте force push в ветку patch2
 ```
