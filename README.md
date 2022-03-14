@@ -53,12 +53,63 @@ EOF
 ```
 git commit -a -m “Version new”
 ```
-### 8. git push
+### 8. Запуште изменения в удалёный репозиторий.
+```
+git push
+```
+
+### 9. Проверьте, что история коммитов доступна в удалёный репозитории.
 
 
 
+## Task 2
 
 
+### 1. В локальной копии репозитория создайте локальную ветку patch1.
+```
+git checkout -b patch1
+```
+### 2. Внесите изменения в ветке patch1 по исправлению кода и избавления от using namespace std;.
+```
+cat > hello_world.cpp << EOF
+#include <iostream>
+#include<string>
+int main(){
+std::string name;
+std::cout << “What is your name?” ;
+std::cin >> name;
+std::cout << “Hello World from ” << name;
+return 0;}
+EOF
+
+```
+### 3. commit, push локальную ветку в удалённый репозиторий.
+```
+git commit -a -m "hello_world.cpp without //using namespace std;// vers.3"
+git push origin patch1
+```
+### 4. Проверьте, что ветка patch1 доступна в удалёный репозитории.
+### 5. Создайте pull-request patch1 -> master.
+### 6. В локальной копии в ветке patch1 добавьте в исходный код комментарии.
+### 7. commit, push.
+```
+git commit -a -m "hello_world.cpp with comment"
+git push origin patch1
+```
+### 8. Проверьте, что новые изменения есть в созданном на шаге 5 pull-request
+### 9. В удалённый репозитории выполните слияние PR patch1 -> master и удалите ветку patch1 в удаленном репозитории.
+### 10. Локально выполните pull.
+```
+Git pull
+```
+### 11. С помощью команды git log просмотрите историю в локальной версии ветки master.
+```
+Git log
+```
+### 12. Удалите локальную ветку patch1.
+```
+git branch -d patch1
+```
 
 
 
