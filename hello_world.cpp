@@ -1,11 +1,8 @@
 #include <iostream>
-#include <string>
-using namespace std;
-int main()
-{
-string Name;
-cout<<"What is your name?";
-cin >> Name;
-cout << "Hello World from " << Name;
-return 0;
-}
+#include<string>
+int main(){
+std::string name;
+std::cout << “What is your name?” ;
+std::cin >> name;
+std::cout << “Hello World from ” << Name;
+return 0;}
